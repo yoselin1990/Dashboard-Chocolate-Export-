@@ -8,7 +8,7 @@ st.set_page_config(page_title='Dashboard Chocolate Export', layout='wide')
 # Cargar los datos desde archivos CSV en GitHub
 @st.cache_data
 def load_data():
-    clientes_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/clientes.csv')
+    clientes_df = pd.read_csv('https://github.com/yoselin1990/Dashboard-Chocolate-Export-/blob/main/clientes.csv')
     mercados_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/mercados.csv')
     exportaciones_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/exportaciones.csv')
     barreras_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/barreras.csv')
