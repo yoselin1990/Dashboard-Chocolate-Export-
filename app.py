@@ -3,16 +3,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Configurar la página
 st.set_page_config(page_title='Dashboard Chocolate Export', layout='wide')
 
-# Cargar los datos desde archivos CSV
+# Cargar los datos desde archivos CSV en GitHub
 @st.cache_data
 def load_data():
-    clientes_df = pd.read_csv("https://raw.githubusercontent.com/yoselin1990/Dashboard-Chocolate-Export/main/clientes.csv")
-    mercados_df = pd.read_csv("https://raw.githubusercontent.com/yoselin1990/Dashboard-Chocolate-Export/main/mercados.csv")
-    exportaciones_df = pd.read_csv("https://raw.githubusercontent.com/yoselin1990/Dashboard-Chocolate-Export/main/exportaciones.csv")
-    barreras_df = pd.read_csv("https://raw.githubusercontent.com/yoselin1990/Dashboard-Chocolate-Export/main/barreras.csv")
+    clientes_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/clientes.csv')
+    mercados_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/mercados.csv')
+    exportaciones_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/exportaciones.csv')
+    barreras_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/barreras.csv')
     return clientes_df, mercados_df, exportaciones_df, barreras_df
 
 # Cargar los datos
