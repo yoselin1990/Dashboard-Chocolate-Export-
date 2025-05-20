@@ -5,14 +5,14 @@ import seaborn as sns
 
 st.set_page_config(page_title-'Dashboard de exportacion de chocolate en centroamerica', layout-'wide')
 
-
+#cargar los datos desde los archivos csv
 @st.cache_data
 def load_data():
 # URLs de los archivos CSV
-clientes_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-ChocolateExport/main/clientes.csv"
-mercados_url = "https://raw.githubusercontent.com/TU_USUARIO/DashboardChocolate-Export/main/mercados.csv"
-exportaciones_url = "https://raw.githubusercontent.com/TU_USUARIO/DashboardChocolate-Export/main/exportaciones.csv"
-barreras_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-ChocolateExport/main/barreras.csv"
+clientes_url = "https://raw.githubusercontent.com/yoselin1990/Dashboard-ChocolateExport/main/clientes.csv"
+mercados_url = "https://raw.githubusercontent.com/yoselin1990/DashboardChocolate-Export/main/mercados.csv"
+exportaciones_url = "https://raw.githubusercontent.com/yoselin1990/DashboardChocolate-Export/main/exportaciones.csv"
+barreras_url = "https://raw.githubusercontent.com/yoselin1990/Dashboard-ChocolateExport/main/barreras.csv"
 clientes = pd.read_csv(clientes_url)
 mercados = pd.read_csv(mercados_url)
 exportaciones = pd.read_csv(exportaciones_url)
