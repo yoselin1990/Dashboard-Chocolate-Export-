@@ -9,7 +9,7 @@ st.set_page_config(page_title='Dashboard Chocolate Export', layout='wide')
 @st.cache_data
 def load_data():
     clientes_df = pd.read_csv('https://github.com/yoselin1990/Dashboard-Chocolate-Export-/blob/main/clientes.csv')
-    mercados_df = pd.read_csv('https://raw.githubusercontent.com/datasets-demos/test-data/main/mercados.csv')
+    mercados_df = pd.read_csv('https://github.com/yoselin1990/Dashboard-Chocolate-Export-/blob/main/mercados.csv')
     exportaciones_df = pd.read_csv('https://github.com/yoselin1990/Dashboard-Chocolate-Export-/blob/main/exportaciones.csv')
     barreras_df = pd.read_csv('https://github.com/yoselin1990/Dashboard-Chocolate-Export-/blob/main/barreras.csv')
     return clientes_df, mercados_df, exportaciones_df, barreras_df
