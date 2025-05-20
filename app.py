@@ -13,9 +13,7 @@ def load_data():
     exportaciones_df = pd.read_csv('https://github.com/yoselin1990/Dashboard-Chocolate-Export-/blob/main/exportaciones.csv')
     barreras_df = pd.read_csv('https://github.com/yoselin1990/Dashboard-Chocolate-Export-/blob/main/barreras.csv')
     return clientes_df, mercados_df, exportaciones_df, barreras_df
-
-# Cargar los datos
-clientes_df, mercados_df, exportaciones_df, barreras_df = load_data()
+    clientes_df, mercados_df, exportaciones_df, barreras_df = load_data()
 
 # Título del Dashboard
 st.title("Dashboard Interactivo de Exportaciones de Chocolates")
