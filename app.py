@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns 
 
-st.set_page_config(page_title-'Dashboard-Chocolate-Export-', layout-'wide')
+st.set_page_config(page_title-'Dashboard-Chocolate-Export', layout-'wide')
 
 #cargar los datos desde los archivos csv
 @st.cache_data
