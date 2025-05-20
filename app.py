@@ -9,14 +9,13 @@ st.set_page_config(page_title-'Dashboard de exportacion de chocolate en centroam
 @st.cache_data
 def load_data():
 # URLs de los archivos CSV
-clientes_url = "https://raw.githubusercontent.com/yoselin1990/Dashboard-ChocolateExport/main/clientes.csv"
-mercados_url = "https://raw.githubusercontent.com/yoselin1990/DashboardChocolate-Export/main/mercados.csv"
-exportaciones_url = "https://raw.githubusercontent.com/yoselin1990/DashboardChocolate-Export/main/exportaciones.csv"
-barreras_url = "https://raw.githubusercontent.com/yoselin1990/Dashboard-ChocolateExport/main/barreras.csv"
-clientes = pd.read_csv(clientes_url)
-mercados = pd.read_csv(mercados_url)
-exportaciones = pd.read_csv(exportaciones_url)
-barreras = pd.read_csv(barreras_url)
+clientes_df = pd.read_csv ('https://raw.githubusercontent.com/yoselin1990/Dashboard-ChocolateExport/main/clientes.csv')
+mercados_df = pd.read_csv ('https://raw.githubusercontent.com/yoselin1990/DashboardChocolate-Export/main/mercados.csv')
+exportaciones_df = pd.read_csv ('https://raw.githubusercontent.com/yoselin1990/DashboardChocolate-Export/main/exportaciones.csv')
+barreras_df = pd.read_csv ('https://raw.githubusercontent.com/yoselin1990/Dashboard-ChocolateExport/main/barreras.csv')
+return clientes_df, mercados_df, exportaciones_df, barreras_df
+
+clientes_df, mercados_df, exportaciones_df, barreras_df = load_data()
 # Título del Dashboard
 st.title(" Dashboard Interactivo de Exportaciones de Chocolates")
 # Filtro de país
