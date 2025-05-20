@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns 
+
+st.set_page_config(page_title-'Dashboard de exportacion de chocolate en centroamerica', layout-'wide')
+
+
+@st.cache_data
+def load_data():
 # URLs de los archivos CSV
 clientes_url = "https://raw.githubusercontent.com/TU_USUARIO/Dashboard-ChocolateExport/main/clientes.csv"
 mercados_url = "https://raw.githubusercontent.com/TU_USUARIO/DashboardChocolate-Export/main/mercados.csv"
